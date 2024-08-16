@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - EbooksCentralHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-800 text-white p-4">
+        <h1 class="text-center text-2xl">Checkout</h1>
+    </header>
+    <section class="p-8">
+        <form id="payment-form" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow">
+            <h2 class="text-xl font-semibold mb-4">Complete Your Purchase</h2>
+            <div id="card-element" class="p-4 border border-gray-300 rounded mb-4">
+                <!-- Stripe's Card Element will be inserted here -->
+            </div>
+            <button id="submit" class="w-full bg-blue-800 text-white py-2 px-4 rounded hover:bg-blue-700">Pay Now</button>
+            <div id="error-message" class="text-red-500 mt-4"></div>
+        </form>
+    </section>
+    <footer class="bg-blue-800 text-white p-4 text-center">
+        <p>&copy; 2024 EbooksCentralHub</p>
+    </footer>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="../js/checkout.js"></script>
+</body>
+  </html>
+  
